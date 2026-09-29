@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
 
         // Sales Amount Listener
         salesAmount.doAfterTextChanged {
+
             calculateTax()
         }
 

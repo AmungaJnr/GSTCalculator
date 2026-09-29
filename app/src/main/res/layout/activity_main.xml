@@ -32,18 +32,38 @@
         android:fontFamily="sans-serif"
         android:textColor="@color/text_primary"/>
 
-    <EditText
-        android:id="@+id/etSalesAmount"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/edit_text_background"
-        android:textColor="@color/text_primary"
-        android:paddingStart="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
         android:paddingEnd="16dp"
-        android:textSize="18sp"
-        android:inputType="numberDecimal"
-        android:hint="Sales Amount" />
+        android:paddingStart="16dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="$" />
+
+        <EditText
+            android:id="@+id/etSalesAmount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textColor="@color/text_primary"
+            android:paddingStart="8dp"
+            android:textSize="18sp"
+            android:inputType="numberDecimal"
+            android:hint="0.00" />
+
+    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
